@@ -9,13 +9,10 @@ const Presentacion = () => {
 
      const inicioData = data?.data.inicio_info
 
-
-
-
   return (
     <header className="header-gradient">
-      <div className="flex justify-between max-w-[1400px] mx-auto g-sections-height">
-        <section className="w-[40rem]">
+      <div className="flex justify-between max-w-[1400px] mx-auto g-sections-height ">
+        <section className="w-[40rem] ">
           <p className="g-yellow-titles my-[2rem] ">
             {inicioData[0]}
           </p>
