@@ -1,9 +1,10 @@
+import Presentacion from '@/_components/inicio/Presentacion'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      pagina de inicio
+      <Presentacion/>
     </div>
   )
 }
