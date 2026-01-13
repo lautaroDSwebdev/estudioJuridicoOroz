@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { langCotext } from "../_context/ContextLang";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ButtonAnimated from "./ui-reusable/ButtonAnimated";
 
 const Nav = () => {
   const data = useContext(langCotext);
@@ -10,9 +11,9 @@ const Nav = () => {
   const navLinks = data?.data.navLinks;
   const logo_desc = data?.data;
 
-  const path = usePathname()
+  const path = usePathname();
   return (
-    <nav className="w-full  bg-[#5f5f5f] h-[9vh]">
+    <nav className="w-full  bg-[#242424] h-[9vh]  ">
       <section className=" flex justify-around max-w-[1200px] mx-auto w-full items-center">
         <div className="flex gap-1 ">
           <img
@@ -31,14 +32,20 @@ const Nav = () => {
         </div>
         <div className="flex gap-4 items-center ">
           {navLinks.map((link) => (
-            <Link key={link.id} href={link.href} className={`text-[#fff] underline-animation ${path === link.href &&  "active"}`}>
+            <Link
+              key={link.id}
+              href={link.href}
+              className={`text-[#fff] underline-animation ${
+                path === link.href && "active"
+              }`}
+            >
               {link.label}
             </Link>
           ))}
         </div>
-        <Link href={``} className="g-buttons-white">
-          Soliticar entrevista
-        </Link>
+        {/* <Link href={``} className="">
+          <ButtonAnimated>Soliticar entrevista</ButtonAnimated>
+        </Link> */}
         <select className="g-buttons-white " onChange={data.HandleLanguage}>
           <option value="es">español</option>
           <option value="en">ingles</option>
