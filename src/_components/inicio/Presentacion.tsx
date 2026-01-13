@@ -29,7 +29,7 @@ const Presentacion = () => {
         </section>
         <img
           className="img-header"
-          src="/oroz-header-img.png"
+          src="/oroz-header-img.webp"
           alt="imagen oroz"
         />
       </div>

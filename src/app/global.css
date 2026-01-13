@@ -346,3 +346,40 @@ html {
     text-align: center;
   }
 }
+.carousel{
+    margin: 100px auto;
+    width: 40%;
+    display: flex;
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+} 
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: #6983d8;
+    font-size: 3rem;
+    border-radius:2em;
+    text-align: center;
+    align-content: center;
+}
+ .group{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: animacion 100s infinite linear ;
+    padding-right: 1em;
+ } 
+
+ @keyframes  animacion{
+    from{
+        translate: 0;
+    }
+    to{
+        translate: -100%;
+
+    }
+ }

@@ -17,7 +17,7 @@ export const Fotter = () => {
     },
     {
       label: "WhatsApp",
-      href: "#",
+      href: "https://api.whatsapp.com/send?phone=2494005894",
       Icon: FaWhatsapp,
     },
     {
@@ -52,7 +52,7 @@ export const Fotter = () => {
             {/* <!-- Acá van tus iconos --> */}
             <div className="footer-social">
               {socialLinks.map(({ Icon, href, label }) => (
-                <a key={label} href={href} aria-label={label}>
+                <a key={label} target="_blank"  href={href} aria-label={label}>
                   <Icon />
                 </a>
               ))}
