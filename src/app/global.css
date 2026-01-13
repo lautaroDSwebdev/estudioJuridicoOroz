@@ -2,6 +2,9 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+html {
+  scroll-behavior: smooth;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -133,34 +136,36 @@
     background-color: #fff;
   }
 }
-.header-gradient{
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(223, 210, 137, 0.93) 100%);
+.header-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(223, 210, 137, 0.93) 100%
+  );
 }
-.g-yellow-titles{
-  color: #B39107;
+.g-yellow-titles {
+  color: #b39107;
   font-size: 1rem;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.g-yellow-button{
-  background-color: #EECA3A;
-  transition: ease-in-out .2s all;
-  &:hover{
-    
+.g-yellow-button {
+  background-color: #eeca3a;
+  transition: ease-in-out 0.2s all;
+  &:hover {
     background-color: rgb(255, 255, 255);
   }
 }
-.g-sections-height{
+.g-sections-height {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 2rem;
   @media (width < 640px) {
     min-height: 90vh;
-
   }
 }
-/* From Uiverse.io by Madflows */ 
+/* From Uiverse.io by Madflows */
 .button {
   position: relative;
   overflow: hidden;
@@ -196,18 +201,13 @@
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    #EECA3A 10.8%,
-    #EECA3A 94.3%
-  );
+  background: linear-gradient(82.3deg, #eeca3a 10.8%, #eeca3a 94.3%);
   transition: all 0.475s;
 }
 
-.img-header{
+.img-header {
   filter: drop-shadow(4px 11px 23px #000000b8);
-  transition: .2s all ease-in-out;
-
+  transition: 0.2s all ease-in-out;
 }
 .underline-animation {
   display: inline-block;
@@ -231,4 +231,118 @@
 .underline-animation.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.footer {
+  background: #000;
+  color: #e5e5e5;
+  padding: 80px 20px 40px;
+  font-family: system-ui, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-brand {
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.footer-subtitle {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.footer-email {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-contact {
+  margin-bottom: 50px;
+}
+
+.footer-phone {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  display: inline-block;
+  svg {
+    font-size: 2rem;
+    transition: 0.2s all ease-in-out;
+    color: #ffffff;
+    &:hover {
+      color: #eeca3a;
+    }
+  }
+}
+
+.footer-address {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.footer-back {
+  font-size: 13px;
+  color: #e5e5e5;
+  text-decoration: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: 0.2s all ease-in-out;
+  color: #ffffff;
+  &:hover {
+    color: #eeca3a;
+  }
+}
+
+.footer-back:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #777;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
