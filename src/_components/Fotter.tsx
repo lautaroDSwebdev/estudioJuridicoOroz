@@ -29,7 +29,7 @@ export const Fotter = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-content">
+      <div className="footer-content  g-max-with">
         {/* <!-- Logo + Nombre --> */}
         <div className="footer-brand">
           {/* <!-- Logo (reemplazá por img) --> */}

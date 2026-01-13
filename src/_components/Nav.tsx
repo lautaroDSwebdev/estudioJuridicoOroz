@@ -13,8 +13,8 @@ const Nav = () => {
 
   const path = usePathname();
   return (
-    <nav className="w-full  bg-[#000000] h-[9vh]  ">
-      <section className=" flex justify-around max-w-[1200px] mx-auto w-full items-center">
+    <nav className="w-full g-max-with mx-auto my-[1rem] rounded-3xl bg-[#000000] h-[10vh] p-[.5rem] ">
+      <section className=" flex justify-around  mx-auto w-full items-center">
         <div className="flex gap-1 ">
           <img
             className="h-auto w-[4.5rem]"

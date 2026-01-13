@@ -156,6 +156,9 @@ html {
     background-color: rgb(255, 255, 255);
   }
 }
+.g-max-with{
+  max-width: 1200px;
+}
 .g-sections-height {
   min-height: 100vh;
   display: flex;
@@ -240,7 +243,6 @@ html {
 }
 
 .footer-content {
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
