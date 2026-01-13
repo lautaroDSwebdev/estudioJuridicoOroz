@@ -11,7 +11,8 @@ export const eng = {
   navLinks: [
     { id: 0, label: "Begin", href: raiz + "/inicio" },
     { id: 1, label: "About us", href: raiz + "/nosotros" },
-    { id: 2, label: "Specialities", href: raiz + "/especialidades" },
-    { id: 3, label: "Contact us", href: raiz + "/contacto" },
+    { id: 2, label: "Pensions", href: raiz + "/jubilaciones" },
+    { id: 3, label: "Penal Rights", href: raiz + "/derecho-penal" },
+    { id: 4, label: "Contact us", href: raiz + "/contacto" },
   ],
 };

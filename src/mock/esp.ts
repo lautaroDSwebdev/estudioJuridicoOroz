@@ -11,7 +11,8 @@ export const esp = {
   navLinks: [
     { id: 0, label: "Inicio", href: raiz + "/inicio" },
     { id: 1, label: "Nosotros", href: raiz + "/nosotros" },
-    { id: 2, label: "Especialidades", href: raiz + "/especialidades" },
-    { id: 3, label: "Contacto", href: raiz + "/contacto" },
+    { id: 2, label: "Jubilaciones", href: raiz + "/jubilaciones" },
+    { id: 3, label: "Derecho Penal", href: raiz + "/derecho-penal" },
+    { id: 4, label: "Contacto", href: raiz + "/contacto" },
   ],
 };
