@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juan Cruz Oroz",
+  title: "Juan Cruz Oroz - Jubilaciones",
   description: "Somos un Equipo de Profesionales que se ocupan de su futura Jubilacion",
   icons: {
     icon: "/logo-oroz1.svg"
