@@ -2,19 +2,21 @@
 import { langCotext } from "@/_context/ContextLang";
 import { useContext } from "react";
 import TitleSecion from "../ui-reusable/TitleSecion";
+import ImportantTitles from "../ui-reusable/ImportantTitles";
 
 const Presentacion = () => {
   const data = useContext(langCotext);
   if (!data) return null;
-
-  const inicioData = data?.data.inicio_info;
+  
+  const inicioData = data?.data?.inicio_info;
+  if (!inicioData) return null;
 
   return (
     <header className="header-gradient">
       <div className="flex justify-between g-max-with mx-auto g-sections-height ">
         <section className="w-[40rem] ">
           <TitleSecion>{inicioData[0]}</TitleSecion>
-          <b className="font-bold text-[3rem] my-[2rem]">{inicioData[1]}</b>
+          <ImportantTitles>{inicioData[1]}</ImportantTitles>
 
           {/* <button className="flex gap-[5px] g-yellow-button text-[1.4rem] cursor-pointer py-[1rem] px-[1.5rem] rounded-2xl my-[2rem] ">
           </button> */}
@@ -29,7 +31,8 @@ const Presentacion = () => {
         </section>
         <img
           className="img-header"
-          src="/oroz-header-img.webp"
+          // src="/oroz-header-img.webp"
+          src="/balanza.png"
           alt="imagen oroz"
         />
       </div>

@@ -21,6 +21,9 @@ html{
     rgba(223, 210, 137, 0.93) 100%
   );
 }
+.styles-nav{
+  filter: drop-shadow(2px 12px 10px #000000b8);
+}
 .g-yellow-titles {
   color: #b39107;
   font-size: 1rem;
@@ -35,7 +38,7 @@ html{
   }
 }
 .g-max-with{
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .g-sections-height {
   min-height: 100vh;
@@ -87,7 +90,7 @@ html{
 }
 
 .img-header {
-  filter: drop-shadow(4px 11px 23px #000000b8);
+  filter: drop-shadow(8px 41px 18px #000000b8);
   transition: 0.2s all ease-in-out;
 }
 .underline-animation {

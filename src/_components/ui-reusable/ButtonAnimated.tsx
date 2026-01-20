@@ -1,8 +1,6 @@
+import { ChildrenComp } from "@/types/types";
 import React from "react";
 
-interface ChildrenComp {
-  children: React.ReactNode;
-}
 
 const ButtonAnimated = ({ children }: ChildrenComp) => {
   return (
