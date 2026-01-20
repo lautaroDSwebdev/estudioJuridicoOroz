@@ -13,7 +13,7 @@ const Presentacion = () => {
 
   return (
     <header className="header-gradient">
-      <div className="flex justify-between g-max-with mx-auto g-sections-height ">
+      <div className="flex flex-col md:flex-row  justify-between g-max-with mx-auto g-sections-height ">
         <section className="w-[40rem] ">
           <TitleSecion>{inicioData[0]}</TitleSecion>
           <ImportantTitles>{inicioData[1]}</ImportantTitles>

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import { FaHandcuffs } from "react-icons/fa6";
 import { FiFlag } from "react-icons/fi";
 import { IoBagHandleOutline } from "react-icons/io5";
 
@@ -38,6 +39,24 @@ export const esp = {
       },
     ],
   },
+  especialidades: [
+    {
+      id: 1,
+      icon: FaHandcuffs,
+      title: "Derecho a la Seguridad Social",
+      description:
+        "Es el Primer Paso para conocer su actual Estado de Aportes. Asesoramiento e inicios de Expedientes, seguimiento y gestión completa del Proceso Jubilatorio.",
+      button: "Quiero jubilarme",
+    },
+    {
+      id: 2,
+      icon: FaHandcuffs,
+      title: "Derecho Penal",
+      description:
+        "Servicios de asistencia letrada y defensa en delitos penales. Vista y estudio de causas. Estrategia y abordaje integral de la defensa. Excarcelaciones.",
+      button: "Tengo un problema",
+    },
+  ],
   navLinks: [
     { id: 0, label: "Inicio", href: raiz + "/inicio" },
     { id: 1, label: "Nosotros", href: raiz + "/nosotros" },

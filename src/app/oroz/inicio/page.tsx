@@ -1,3 +1,4 @@
+import Especialidades from '@/_components/inicio/Especialidades'
 import Presentacion from '@/_components/inicio/Presentacion'
 import SobreNosotros from '@/_components/inicio/SobreNosotros'
 import Carrusel from '@/_components/ui-reusable/Carrusel'
@@ -9,6 +10,7 @@ const page = () => {
       <Presentacion/>
       <SobreNosotros/>
       <Carrusel/>
+      <Especialidades/>
     </div>
   )
 }

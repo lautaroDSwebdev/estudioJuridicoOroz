@@ -1,0 +1,6 @@
+@media screen and (width < 1200px) {
+  .img-header {
+   height: auto;
+   width: 50%;
+  }
+}
