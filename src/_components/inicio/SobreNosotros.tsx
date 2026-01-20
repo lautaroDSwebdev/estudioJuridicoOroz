@@ -22,9 +22,9 @@ const SobreNosotros = () => {
       <SubTitles>{sobrenosotros.subtitles[0]}</SubTitles>
       <SubTitles>{sobrenosotros.subtitles[1]}</SubTitles>
 
-      <section className="flex gap-[2rem] justify-around">
+      <section className="flex flex-wrap gap-[2rem] justify-around">
         {sobrenosotros.box.map(({ id, icon: Icon, title, subtitle }) => (
-          <div key={id} className="w-[40%] flex flex-col">
+          <div key={id} className="w-[30rem] flex flex-col">
             <div className="flex justify-center">
               <Icon className="text-[#B39107] h-auto w-[2.5rem]" />
             </div>

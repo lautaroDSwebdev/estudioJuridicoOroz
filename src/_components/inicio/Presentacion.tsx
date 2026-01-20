@@ -18,8 +18,7 @@ const Presentacion = () => {
           <TitleSecion>{inicioData[0]}</TitleSecion>
           <ImportantTitles>{inicioData[1]}</ImportantTitles>
 
-          {/* <button className="flex gap-[5px] g-yellow-button text-[1.4rem] cursor-pointer py-[1rem] px-[1.5rem] rounded-2xl my-[2rem] ">
-          </button> */}
+        
           <div className="my-[3rem]">
             <button className="button">
               <span className="button-content">
