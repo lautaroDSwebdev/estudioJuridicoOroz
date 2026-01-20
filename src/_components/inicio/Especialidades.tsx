@@ -23,7 +23,7 @@ const Especialidades = () => {
               </div>
               <BoxTitles>{title}</BoxTitles>
               <BoxSubTitles>{description}</BoxSubTitles>
-              <button className="hover:bg-[#eeca3a] transition transition-all ease-in .2s bg-[#fff] p-[.5rem] text-[1.5rem] cursor-pointer hover:text-[#ffffff] rounded-2xl text-[#585757] font-bold border border-2 border-[#eeca3a]">
+              <button className="hover:bg-[#eeca3a] transition transition-all ease-in .2s bg-[#fff3c5] p-[.5rem] text-[1.5rem] cursor-pointer hover:text-[#ffffff] rounded-2xl text-[#585757] font-bold border border-2 border-[#eeca3a]">
                 {button}
               </button>
             </div>
