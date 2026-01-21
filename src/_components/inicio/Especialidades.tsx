@@ -4,7 +4,6 @@ import ImportantTitles from "../ui-reusable/ImportantTitles";
 import { langCotext } from "@/_context/ContextLang";
 import BoxTitles from "../ui-reusable/BoxTitles";
 import BoxSubTitles from "../ui-reusable/BoxSubTitles";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 const Especialidades = () => {
   const data = useContext(langCotext);
