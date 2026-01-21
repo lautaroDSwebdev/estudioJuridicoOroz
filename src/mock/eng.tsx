@@ -46,6 +46,7 @@ export const eng = {
       description:
         "The first step to understanding your current contribution status. Legal advice, case initiation, follow-up, and full management of the retirement process.",
       button: "I want to retire",
+      href: "/oroz/jubilaciones"
     },
     {
       id: 2,
@@ -54,6 +55,7 @@ export const eng = {
       description:
         "Legal assistance and defense in criminal offenses. Case review and analysis. Strategic and comprehensive defense approach. Bail proceedings.",
       button: "I have a problem",
+      href: "/oroz/derecho-penal"
     },
   ],
   navLinks: [

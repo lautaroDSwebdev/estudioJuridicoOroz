@@ -4,8 +4,11 @@ import ImportantTitles from "../ui-reusable/ImportantTitles";
 import { langCotext } from "@/_context/ContextLang";
 import BoxTitles from "../ui-reusable/BoxTitles";
 import BoxSubTitles from "../ui-reusable/BoxSubTitles";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const Especialidades = () => {
   const data = useContext(langCotext);
+  const router = useRouter();
   if (!data) return null;
 
   const specials = data?.data.especialidades;
@@ -16,18 +19,26 @@ const Especialidades = () => {
       </div>
       <div>
         <section className="flex flex-wrap gap-[2rem] justify-around">
-          {specials.map(({ id, icon: Icon, title, description, button }) => (
-            <div key={id} className="w-[34rem] flex flex-col transition transition-all  .3s ease-in hover:shadow-2xl shadow-stone-400 rounded-2xl p-[1rem]">
-              <div className="flex justify-center">
-                <Icon className="text-[#000000] h-auto w-[2.5rem]" />
+          {specials.map(
+            ({ id, icon: Icon, title, description, button, href }) => (
+              <div
+                key={id}
+                className="w-[34rem] flex flex-col transition transition-all  .3s ease-in hover:shadow-2xl shadow-stone-400 rounded-2xl p-[1rem]"
+              >
+                <div className="flex justify-center">
+                  <Icon className="text-[#000000] h-auto w-[2.5rem]" />
+                </div>
+                <BoxTitles>{title}</BoxTitles>
+                <BoxSubTitles>{description}</BoxSubTitles>
+                <button
+                  onClick={() => router.push(href)}
+                  className="hover:bg-[#eeca3a] transition transition-all ease-in .2s bg-[#fff3c5] p-[.5rem] text-[1.5rem] cursor-pointer hover:text-[#ffffff] rounded-2xl text-[#585757] font-bold border border-2 border-[#eeca3a]"
+                >
+                  {button}
+                </button>
               </div>
-              <BoxTitles>{title}</BoxTitles>
-              <BoxSubTitles>{description}</BoxSubTitles>
-              <button className="hover:bg-[#eeca3a] transition transition-all ease-in .2s bg-[#fff3c5] p-[.5rem] text-[1.5rem] cursor-pointer hover:text-[#ffffff] rounded-2xl text-[#585757] font-bold border border-2 border-[#eeca3a]">
-                {button}
-              </button>
-            </div>
-          ))}
+            ),
+          )}
         </section>
       </div>
     </section>

@@ -47,14 +47,16 @@ export const esp = {
       description:
         "Es el Primer Paso para conocer su actual Estado de Aportes. Asesoramiento e inicios de Expedientes, seguimiento y gestión completa del Proceso Jubilatorio.",
       button: "Quiero jubilarme",
+      href: "/oroz/jubilaciones"
     },
     {
       id: 2,
       icon: FaHandcuffs,
       title: "Derecho Penal",
       description:
-        "Servicios de asistencia letrada y defensa en delitos penales. Vista y estudio de causas. Estrategia y abordaje integral de la defensa. Excarcelaciones.",
+      "Servicios de asistencia letrada y defensa en delitos penales. Vista y estudio de causas. Estrategia y abordaje integral de la defensa. Excarcelaciones.",
       button: "Tengo un problema",
+      href: "/oroz/derecho-penal"
     },
   ],
   navLinks: [
